@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan  4 13:11:04 2025
+Created on Sat Jan  4 13:11:04 2024
 
 @author: sajjad
 """
@@ -37,6 +37,7 @@ class LibraryManager:
         new_member = User(member_id, member_name)
         self.members[new_member] = []
         print("Member successfully registered!")
+        
 
     def lend_book(self, member_name, book_title):
         target_book = ''.join(self.find_book(book_title))
