@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan  4 13:11:26 2025
+Created on Sat Jan  4 13:11:26 2024
 
 @author: sajjad
 """
@@ -51,7 +51,7 @@ class LibraryAssistant:
 
     def issue_title(self):
         member_name = input('Enter member name: \n')
-        title = input('Enter title name: \n')
+        title = input('Enter title name: \n') 
         self.manager.lend_book(member_name, title)
 
     def receive_title(self):
