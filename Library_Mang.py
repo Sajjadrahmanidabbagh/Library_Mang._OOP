@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan  4 13:10:11 2025
+Created on Sat Jan  4 13:10:11 2024
 
 @author: sajjad
 """
@@ -15,7 +15,6 @@ class Book:
     def __str__(self):
         return f"ID: {self.book_id}, Name: {self.name}, Quantity: {self.quantity}"
 
-
 class User:
     def __init__(self, user_id, name):
         self.user_id = user_id
@@ -24,7 +23,6 @@ class User:
 
     def __str__(self):
         return f"ID: {self.user_id}, Name: {self.name}, Borrowed Books: {[book.name for book in self.borrowed_books]}"
-
 
 class Admin:
     def __init__(self):
@@ -173,7 +171,6 @@ def main():
 
         else:
             print("Invalid choice. Please try again.")
-
 
 if __name__ == "__main__":
     main()
