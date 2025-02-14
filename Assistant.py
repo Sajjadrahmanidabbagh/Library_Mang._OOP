@@ -11,7 +11,6 @@ from LibraryManager import *
 class LibraryAssistant:
     def __init__(self):
         self.manager = LibraryManager()
-
     def display_menu(self):
         print("Menu Options:")
         options = [
@@ -26,45 +25,36 @@ class LibraryAssistant:
         ]
         print('\n'.join(options))
         return self.get_selection(len(options))
-
     def get_selection(self, max_options):
         prompt = f"Select an option between 1 and {max_options}: \n"
         return validate_input(prompt, 1, max_options)
-
     def register_book(self):
         catalog_id = input('Enter book ID: \n')
         title = input('Enter book title: \n')
         stock = input('Enter book stock quantity: \n')
         self.manager.register_book(catalog_id, title, stock)
-
     def show_titles(self):
         print(self.manager.display_books())
 
     def find_titles(self):
         keyword = input('Enter search prefix: \n')
         print(', '.join(self.manager.find_book(keyword)))
-
     def register_member(self):
         member_id = int(input('Enter member ID: \n'))
         member_name = input('Enter member name: \n')
         self.manager.register_member(member_id, member_name)
-
     def issue_title(self):
         member_name = input('Enter member name: \n')
         title = input('Enter title name: \n') 
         self.manager.lend_book(member_name, title)
-
     def receive_title(self):
         member_name = input('Enter member name: \n')
         title = input('Enter title name: \n')
         self.manager.return_title(member_name, title)
-
     def view_borrowed_titles(self):
         self.manager.list_borrowers()
-
     def list_members(self):
         self.manager.list_all_members()
-
     def execute(self):
         while True:
             choice = self.display_menu()
