@@ -1,6 +1,6 @@
 """
 Created on Sat Jan 4 2024
-@author: sajjad
+author: sajjad
 """
 
 class Book:
