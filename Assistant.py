@@ -1,5 +1,5 @@
 """
-Created on Sat Jan 4 2024
+Created on Jan 4 2024
 
 @author: sajjad
 """
