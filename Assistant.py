@@ -1,7 +1,7 @@
 """
 Created on Jan 4, 2024
 
-@author: sajjad
+@author: Sajjad
 """
 
 from LibraryManager import *
