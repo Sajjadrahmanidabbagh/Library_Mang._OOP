@@ -2,7 +2,6 @@
 Created on Jan 4 2024
 @author: sajjad
 """
-
 class LibraryManager:
     def __init__(self):
         self.catalog = []  # book object
